@@ -1,0 +1,24 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+} 
+html, body{ 
+
+  background-color: black;
+  
+ }
+  body{ 
+     overflow: hidden; 
+   position: relative;
+  }
+ #abc{ 
+   transition: all cubic-bezier(0.19 ,1 ,0.22 , 1) 1s;
+   position: absolute;
+  height: 400px;
+   width: 400px;
+    background-color: red;
+     
+ }
+ 

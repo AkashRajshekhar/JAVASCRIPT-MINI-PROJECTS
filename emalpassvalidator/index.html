@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email & Password Validation (No JS)</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form autocomplete="on">
+      <h2>Sign Up</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"
+             required
+             pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+             title="Enter a valid email" />
+      <span class="info">Must be a valid email (e.g. user@domain.com)</span>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"
+             required
+             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             title="Min 8 chars, 1 uppercase, 1 lowercase, 1 number" />
+      <span class="info">
+        Min 8 chars, 1 uppercase, 1 lowercase, 1 number
+      </span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>
